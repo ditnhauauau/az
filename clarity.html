@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/style.css" class="" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fangstudios</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+      <a href="index.html" class="navbar-brand m-0 desktop">fangstudios</a>
+      <input type="checkbox" id="toggle" class="navbar-toggler" />
+      <label for="toggle" class="navbar-toggler">
+        <span class="fas fa-bars"></span>
+      </label>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mt-lg-0 menu-did">
+          <li class="nav-item">
+            <a href="new-arrivals.html" class="nav-link">NEW ARRIVALS</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a
+                href="#"
+                class="nav-link flag"
+                id="shop"
+                tabindex="0"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                SHOP
+              </a>
+              <div class="dropdown-menu" aria-labelledby="shop">
+                <a class="dropdown-item" href="./Menu/all.html">All</a>
+                <a class="dropdown-item" href="./Menu/outerwear.html"
+                  >OUTERWEAR</a
+                >
+                <a class="dropdown-item" href="./Menu/tops.html">TOPS</a>
+                <a class="dropdown-item" href="./Menu/bottoms.html">BOTTOMS</a>
+                <a class="dropdown-item" href="./Menu/accessories.html"
+                  >ACCESSORIES</a
+                >
+                <a class="dropdown-item" href="./Menu/bags.html">BAGS</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">MAN</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">WOMAN</a>
+          </li>
+        </ul>
+        <div class="form-inline my-lg-0">
+          <ul class="navbar-nav mt-2 mt-lg-0 login-cart">
+            <li class="nav-item">
+              <a href="cart.html" class="nav-link">BAG</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid pt-100 mb-90">
+      <div class="alert-t">
+        <div class="toast-content">
+          <i class="fas fa-solid fa-check check"></i>
+          <div class="message">
+            <span class="text text-1">Success</span>
+            <span class="text text-2">Your email has been submitted!</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-xmark close"></i>
+        <div class="progress"></div>
+      </div>
+
+      <div class="alert-e">
+        <div class="error-content">
+          <div class="message">
+            <span class="text text-1">Error</span>
+            <span id="errorMessage" class="text text-2"></span>
+          </div>
+        </div>
+        <i class="fa-solid fa-xmark close-error"></i>
+      </div>
+
+      <div class="row">
+        <div class="col-12" id="load-more">
+          <section class="wrapper">
+            <div class="content">
+              <header>
+                <h1>Subscribe Us</h1>
+              </header>
+              <section>
+                <p>We will let you know our latest products and collection.</p>
+              </section>
+              <footer>
+                <form id="emailForm">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    pattern="[a-zA-Z0-9.%+-]+@gmail.com$"
+                    required
+                    placeholder="Enter your email"
+                  />
+                  <button type="submit">Let's go</button>
+                </form>
+              </footer>
+            </div>
+          </section>
+        </div>
+        <style>
+          body {
+            background-image: url("https://moidien.com/cdn/shop/files/MD_FW23_Webbackground_1400x.jpg?v=1700123347");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+          }
+          .wrapper .content {
+            background: none !important;
+          }
+
+          .navbar-light .navbar-nav .nav-link {
+            color: white !important;
+          }
+          .footer-cart a {
+            color: white !important;
+          }
+
+          .navbar-brand {
+            color: white !important;
+          }
+          .wrapper .content header h1 {
+            color: white !important;
+          }
+
+          p {
+            color: white !important;
+          }
+          .alert-t,
+          .alert-e {
+            position: fixed;
+            top: 25px;
+            right: 30px;
+            border-radius: 12px;
+            background: #fff;
+            padding: 20px 35px 20px 25px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            border-left: 6px solid #4070f4;
+            overflow: hidden;
+            transform: translateX(calc(100% + 30px));
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+            z-index: 9999;
+          }
+
+          .alert-t.active,
+          .alert-e.active {
+            transform: translateX(0%);
+          }
+
+          .alert-t .toast-content,
+          .alert-e .toast-content {
+            display: flex;
+            align-items: center;
+          }
+
+          .toast-content .check {
+            color: #4070f4;
+            font-size: 24px;
+          }
+
+          .toast-content .error-icon {
+            color: #ff0000;
+            font-size: 24px;
+          }
+
+          .toast-content .message {
+            display: flex;
+            flex-direction: column;
+            margin: 0 20px;
+          }
+
+          .message .text {
+            font-size: 16px;
+            font-weight: 400;
+            color: #333;
+          }
+
+          .message .text.text-1 {
+            font-weight: 600;
+            color: #4070f4;
+          }
+
+          .message .text.text-2 {
+            font-size: 14px;
+            margin-top: 5px;
+          }
+
+          .alert-t .close,
+          .alert-e .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            padding: 5px;
+            cursor: pointer;
+            opacity: 0.7;
+            color: #4070f4;
+            font-size: 18px;
+          }
+
+          .alert-t .close:hover,
+          .alert-e .close:hover {
+            opacity: 1;
+          }
+
+          .alert-t .progress,
+          .alert-e .progress {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            width: 100%;
+            background: #ddd;
+          }
+
+          .alert-t .progress:before,
+          .alert-e .progress:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #4070f4;
+          }
+
+          .progress.active:before {
+            animation: progress 5s linear forwards;
+          }
+
+          @keyframes progress {
+            100% {
+              right: 100%;
+            }
+          }
+        </style>
+      </div>
+    </div>
+    <footer class="footer-cart">
+      <div class="hidden-575">
+        <div class="row m-0">
+          <div class="col-6 col-sm-5 col-md-5 col-lg-5 col-xl-5 p-0">
+            <div class="did-page did-social">
+              <a href="./footer/contact.html">contact</a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="p-0-40"
+              >
+                INSTAGRAM
+              </a>
+              <a href="./footer/about.html">about</a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-7 col-md-7 col-lg-7 col-xl-7 p-0">
+            <div class="did-page">
+              <a href="./footer/returns.html">returns &amp; exchange</a>
+              <a href="#" class="p-0-40">shipping</a>
+              <a href="#">tracking</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-575">
+        <div class="row m-0">
+          <div class="col-12 p-0">
+            <div class="did-page">
+              <a class="p-r-20" href="../footer/contact.html">contact</a>
+              <a
+                class="p-r-20"
+                href="https://www.instagram.com"
+                target="_blank"
+              >
+                INSTAGRAM
+              </a>
+              <a href="../footer/about.html">about</a>
+            </div>
+          </div>
+          <div class="col-12 mt-10">
+            <div class="did-page">
+              <a class="p-r-20" href="../footer/returns.html"
+                >returns &amp; exchange</a
+              >
+              <a class="p-r-20" href="#">shipping</a>
+              <a href="#">tracking</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    document
+      .getElementById("emailForm")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        var email = document.getElementById("email").value;
+        var emailPattern = /^[a-zA-Z0-9._%+-]+@gmail.com$/;
+        var errorMessageElement = document.getElementById("errorMessage");
+        var alertError = document.querySelector(".alert-e");
+        var alertSuccess = document.querySelector(".alert-t");
+        if (emailPattern.test(email)) {
+          // Hiển thị thông báo thành công
+          alertSuccess.classList.add("active");
+          const successProgress = document.querySelector(".alert-t .progress");
+          let successTimer1, successTimer2;
+
+          function showSuccessToast() {
+            successProgress.classList.add("active");
+            successTimer1 = setTimeout(() => {
+              alertSuccess.classList.remove("active");
+            }, 5000);
+            successTimer2 = setTimeout(() => {
+              successProgress.classList.remove("active");
+              // Điều hướng sang trang khác sau khi thông báo biến mất
+              window.location.href = "./Menu/all.html";
+            }, 5300);
+          }
+
+          showSuccessToast();
+
+          const closeSuccessIcon = document.querySelector(".alert-t .close");
+          closeSuccessIcon.addEventListener("click", () => {
+            alertSuccess.classList.remove("active");
+            setTimeout(() => {
+              successProgress.classList.remove("active");
+              // Điều hướng sang trang khác khi đóng thô            window.location.href = "./Menu/all.html";
+            }, 300);
+            clearTimeout(successTimer1);
+            clearTimeout(successTimer2);
+          });
+
+          alertError.classList.remove("active"); // Ẩn thông báo lỗi nếu có
+        } else {
+          // Hiển thị thông báo lỗi
+          errorMessageElement.textContent =
+            "Invalid email address. Please enter an email with @gmail.com domain.";
+          alertError.classList.add("active");
+          const errorProgress = document.querySelector(".alert-e .progress");
+          let errorTimer1, errorTimer2;
+
+          function showErrorToast() {
+            errorProgress.classList.add("active");
+            errorTimer1 = setTimeout(() => {
+              alertError.classList.remove("active");
+            }, 5000);
+            errorTimer2 = setTimeout(() => {
+              errorProgress.classList.remove("active");
+            }, 5300);
+          }
+
+          showErrorToast();
+
+          const closeErrorIcon = document.querySelector(".alert-e .close");
+          closeErrorIcon.addEventListener("click", () => {
+            alertError.classList.remove("active");
+            setTimeout(() => {
+              errorProgress.classList.remove("active");
+            }, 300);
+            clearTimeout(errorTimer1);
+            c;
+          });
+
+          alertSuccess.classList.remove("active"); // Ẩn thông báo thành công nếu có
+        }
+      });
+  </script>
+</html>

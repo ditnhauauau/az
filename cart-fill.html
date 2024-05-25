@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/style.css" class="" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fangstudios</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+      <a href="index.html" class="navbar-brand m-0 desktop">fangstudios</a>
+      <input type="checkbox" id="toggle" class="navbar-toggler" />
+      <label for="toggle" class="navbar-toggler">
+        <span class="fas fa-bars"></span>
+      </label>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mt-lg-0 menu-did">
+          <li class="nav-item">
+            <a href="#" class="nav-link">NEW ARRIVALS</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a
+                href="#"
+                class="nav-link flag"
+                id="shop"
+                tabindex="0"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                SHOP
+              </a>
+              <div class="dropdown-menu" aria-labelledby="shop">
+                <a class="dropdown-item" href="./Menu/all.html">All</a>
+                <a class="dropdown-item" href="./Menu/outerwear.html"
+                  >OUTERWEAR</a
+                >
+                <a class="dropdown-item" href="./Menu/tops.html">TOPS</a>
+                <a class="dropdown-item" href="./Menu/bottoms.html">BOTTOMS</a>
+                <a class="dropdown-item" href="./Menu/accessories.html"
+                  >ACCESSORIES</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">MAN</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">WOMAN</a>
+          </li>
+        </ul>
+        <div class="form-inline my-lg-0">
+          <ul class="navbar-nav mt-2 mt-lg-0 login-cart">
+            <li class="nav-item">
+              <a href="cart.html" class="nav-link">BAG</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid pt-100 mb-90">
+      <div class="row" id="cart">
+        <div class="col-12">
+          <header class="entry-header">
+            <h1 class="entry-title">Cart</h1>
+          </header>
+        </div>
+        <div class="col-12 col-lg-12 col-xl-8 mb_15">
+          <h1 class="cart-title">ITEMS</h1>
+          <div class="cart-list-item">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">PRODUCT</th>
+                    <th class="th-name-product" scope="col"></th>
+                    <th class="th-price" scope="col">PRICE</th>
+                    <th class="th-quantity" scope="col">QUANTITY</th>
+                    <th class="th-price" scope="col">SUBTOTAL</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr id="item-id-55">
+                    <td class="box-item-img-cart">
+                      <a class="custom-a" href="../detail.html">
+                        <img
+                          class="img-responsive"
+                          src="https://www.alyxstudio.com/cdn/shop/files/AAUSW0208FA01_BLK0001_F23_3_c198c42f-fc9b-4595-82ed-a9e44e206615_1024x.png?v=1706276120"
+                        />
+                      </a>
+                    </td>
+                    <td class="cart-name-size">
+                      <a class="custom-a" href="../detail.html">AZJK/176</a>
+                      <p class="mb_0">Size: OS</p>
+                      <p class="mb_0">Color: 176</p>
+                    </td>
+                    <td>
+                      <div>
+                        <p class=""></p>
+                        <p class="">100 AUD</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input-group">
+                        <input
+                          type="button"
+                          value="-"
+                          class="button-minus"
+                          data-field="quantity"
+                        />
+                        <input
+                          item-size="OS"
+                          type="number"
+                          step="1"
+                          min="1"
+                          max="20"
+                          value="1"
+                          name="quantity"
+                          class="quantity-field"
+                        />
+                        <input
+                          type="button"
+                          value="+"
+                          class="button-plus"
+                          data-field="quantity"
+                        />
+                      </div>
+                    </td>
+                    <td id="item-subToal-55">100 AUD</td>
+                    <td>
+                      <i
+                        data-toggle="modal"
+                        data-target="#modalDelete"
+                        item-name="AZJK/176"
+                        item-id="55"
+                        class="remove-item-cart far fa-times-circle"
+                      >
+                      </i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <span class="action-cart action-clear">Clear Cart</span>
+                    </td>
+                    <td>
+                      <span class="action-cart action-update">Update Cart</span>
+                    </td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-12 col-xl-4 mb_15">
+          <h1 class="cart-title">CART TOTALS</h1>
+          <div class="cart-total">
+            <div class="cart-subTotal">
+              <span class="span-l">SUBTOTAL</span>
+              <span class="span-r">100 AUD</span>
+            </div>
+            <div class="cart-shipping">
+              <span class="span-l">SHIPPING</span>
+              <span class="span-r"
+                >Shipping costs are calculated during checkout.</span
+              >
+            </div>
+            <div class="cart-sumTotal">
+              <span class="span-l">TOTAL</span>
+              <span class="span-r">100 AUD</span>
+            </div>
+            <div class="cart-to-checkout">
+              <span class="span-r">
+                <a href="../checkout.html" class="button-85">
+                  Proceed to checkout
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="modalDelete"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modalDeleteLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalFilterLabel">DELETE PRODUCT</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button type="button" class="btn" data-dismiss="modal">
+                Close
+              </button>
+              <button
+                type="button"
+                class="btn action-delete"
+                data-dismiss="modal"
+              >
+                Confirm
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <input type="hidden" id="item-id" />
+      <input type="hidden" id="country" value="VN" />
+    </div>
+    <footer class="footer-cart">
+      <div class="hidden-575">
+        <div class="row m-0">
+          <div class="col-6 col-sm-5 col-md-5 col-lg-5 col-xl-5 p-0">
+            <div class="did-page did-social">
+              <a href="./footer/contact.html">contact</a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="p-0-40"
+              >
+                INSTAGRAM
+              </a>
+              <a href="./footer/about.html">about</a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-7 col-md-7 col-lg-7 col-xl-7 p-0">
+            <div class="did-page">
+              <a href="./footer/returns.html">returns &amp; exchange</a>
+              <a href="#" class="p-0-40">shipping</a>
+              <a href="#">tracking</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-575">
+        <div class="row m-0">
+          <div class="col-12 p-0">
+            <div class="did-page">
+              <a class="p-r-20" href="../footer/contact.html">contact</a>
+              <a
+                class="p-r-20"
+                href="https://www.instagram.com"
+                target="_blank"
+              >
+                INSTAGRAM
+              </a>
+              <a href="../footer/about.html">about</a>
+            </div>
+          </div>
+          <div class="col-12 mt-10">
+            <div class="did-page">
+              <a class="p-r-20" href="../footer/returns.html"
+                >returns &amp; exchange</a
+              >
+              <a class="p-r-20" href="#">shipping</a>
+              <a href="#">tracking</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/js/script.js"></script>
+</html>
